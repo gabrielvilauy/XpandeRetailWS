@@ -15,7 +15,11 @@
       <init-param> 
          <param-name>jersey.config.server.provider.packages</param-name> 
          <param-value>org.xpande.retail.ws.service</param-value> 
-      </init-param> 
+      </init-param>
+      <init-param>
+      	<param-name>com.sun.jersey.api.json.POJOMappingFeature</param-name>
+      	<param-value>true</param-value>
+      </init-param>       
    </servlet> 
    <servlet-mapping> 
       <servlet-name>Jersey RESTful Application</servlet-name> 
